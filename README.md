@@ -83,19 +83,4 @@ on validation data.
 | Embedding size | 768 |
 | Top-K candidates | 10 |
 
-## Citation
 
-```bibtex
-@inproceedings{sadirmekova2026plmllm,
-  title     = {A Distributed PLM-LLM Framework for Semantic Processing and
-               Knowledge Graph Construction in Mobile and Edge Computing
-               Environments},
-  author    = {Sadirmekova, Zhanna and Sambetbayeva, Madina and
-               Abdygalym, Bayangali and Taberkhan, Roman and
-               Karbozova, Indira},
-  booktitle = {Proceedings of the 23rd International Conference on Mobile
-               Systems and Pervasive Computing (MobiSPC)},
-  year      = {2026},
-  publisher = {Elsevier}
-}
-```

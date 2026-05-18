@@ -1,12 +1,5 @@
 # PLM-LLM Framework for Semantic Processing and Knowledge Graph Construction
 
-Source code for the paper:
-
-> **A Distributed PLM-LLM Framework for Semantic Processing and Knowledge Graph
-> Construction in Mobile and Edge Computing Environments**
-> Sadirmekova Zh., Sambetbayeva M., Abdygalym B., Taberkhan R., Karbozova I.
-> *The 23rd International Conference on Mobile Systems and Pervasive Computing (MobiSPC 2026)*, Athens, Greece.
-
 ## Overview
 
 The framework implements a three-stage distributed pipeline for multilingual
@@ -20,24 +13,6 @@ The framework implements a three-stage distributed pipeline for multilingual
 3. **Knowledge graph layer** — ontology-guided ranking, conflict detection, and
    integration into the knowledge graph.
 
-## Repository structure
-
-```
-plm-llm-kg-framework/
-├── README.md
-├── requirements.txt
-├── pipeline.py              # main three-stage pipeline
-├── benchmark.py             # system-level evaluation (latency, bandwidth, memory)
-├── ontology.py              # ontology operations and ranking
-├── contrastive.py           # contrastive learning utilities
-├── prompts/
-│   ├── prompt_en.txt        # instruction prompt for English
-│   ├── prompt_ru.txt        # instruction prompt for Russian
-│   └── prompt_kz.txt        # instruction prompt for Kazakh
-└── configs/
-    ├── ranking_weights.json # alpha, beta, gamma, delta weights
-    └── hyperparameters.json # PLM training hyperparameters
-```
 
 ## Installation
 
@@ -124,12 +99,3 @@ on validation data.
   publisher = {Elsevier}
 }
 ```
-
-## Acknowledgements
-
-This research has been funded by the Committee of Science of the Ministry of
-Science and Higher Education of the Republic of Kazakhstan, Grant AP26195165.
-
-## License
-
-MIT License — see `LICENSE` file.

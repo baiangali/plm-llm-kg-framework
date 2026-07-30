@@ -1,0 +1,21 @@
+# Core pipeline (Stages 1 and 3, dense models).
+torch>=2.1
+transformers>=4.36
+numpy>=1.24
+tqdm>=4.66
+
+# Explainable instruction tuning (Section 3.6, Llama-2-7B + LoRA).
+peft>=0.7
+# Not imported directly. accelerate backs `device_map="auto"` and
+# transformers.Trainer; sentencepiece backs the Llama-2 tokeniser. Both are
+# required at run time by the `llm_tuned` / `llm_zero_shot` selectors.
+accelerate>=0.25
+sentencepiece>=0.1.99      # tokeniser of Kudo & Richardson [36]
+
+# Logical validation with the ELK reasoner (Section 4.6).
+# Requires a JVM. Optional: without it the graph backend still decides the
+# cycle condition exactly and reports the other two as "not checked".
+# deeponto>=0.9
+
+# Note: the ontology model, Stage 2, the metrics and the inverted-index
+# baseline have no third-party dependencies and run on a bare Python 3.9+.
